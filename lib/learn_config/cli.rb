@@ -12,7 +12,7 @@ module LearnConfig
         puts <<-LONG
 To connect with the Learn web application, you will need to configure
 the Learn gem with an OAuth token. You can find yours at the bottom of your profile
-page at: https://learn.co/#{github_username ? github_username : 'your-github-username'}.
+page at: https://base.flatironschool.com/account/manage
 
         LONG
 
