@@ -1,18 +1,13 @@
 module LearnConfig
   class CLI
-    attr_reader   :github_username
     attr_accessor :token
-
-    def initialize(github_username)
-      @github_username = github_username
-    end
 
     def ask_for_oauth_token(short_text: false, retries_remaining: 5)
       if !short_text
         puts <<-LONG
 To connect with the Learn web application, you will need to configure
 the Learn gem with an OAuth token. You can find yours at the bottom of your profile
-page at: https://learn.co/#{github_username ? github_username : 'your-github-username'}.
+page at: https://base.flatironschool.com/account/manage.
 
         LONG
 
