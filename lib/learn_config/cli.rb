@@ -10,9 +10,9 @@ module LearnConfig
     def ask_for_oauth_token(short_text: false, retries_remaining: 5)
       if !short_text
         puts <<-LONG
-To connect with the Learn web application, you will need to configure
-the Learn gem with an OAuth token. You can find yours on your Canvas account management
-page at: https://base.flatironschool.com/account/manage
+In order to receive credit for your work, you will need to configure
+the Learn gem with an OAuth token. You can find yours in Base at:
+  https://base.flatironschool.com/account/manage
 
         LONG
 
